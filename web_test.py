@@ -139,7 +139,7 @@ else:
             st.warning("⚠️ 请至少填写一顿饭的内容！")
         else:
             with st.spinner("AI 正在帮你估算热量..."):
-                               prompt = f"""你是一个专业的营养师。请帮我估算以下饮食和运动的热量。
+                prompt = f"""你是一个专业的营养师。请帮我估算以下饮食和运动的热量。
 用户信息：{gender}，{age}岁，{height}cm，{weight}kg。
 
 早餐：{bf or '未吃'}
