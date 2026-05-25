@@ -12,7 +12,7 @@ import json
 # 配置区
 # ============================================
 # ⚠️ 部署到云端时，API Key 请使用 Streamlit Secrets，本地测试可写在这里
-API_KEY = "sk-6a6ce5787d9d49c497bf8f7aaafc9a94"
+API_KEY = st.secrets["API_KEY"]
 BASE_URL = "https://api.deepseek.com"
 
 client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
